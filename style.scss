@@ -30,6 +30,29 @@ p{
 .section-p1{
       padding: 40px 80px;
 }
+button.normal{
+      font-size: 14px;
+      font-weight: 600;
+      padding: 15px 30px;
+      color: black;
+      background-color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: 0.2s;
+}
+button.white{
+      font-size: 13px;
+      font-weight: 600;
+      padding: 11px 25px;
+      color: white;
+      background-color: transparent;
+      border: 1px solid #fff;
+      cursor: pointer;
+      outline: none;
+      transition: 0.2s;
+}
 .section-m1{
       margin: 40px 0;
 }
@@ -233,4 +256,113 @@ body{
       bottom: 20px;
       right: 10px;
   }
-// ============== Shop Page ================
+// ============== Banner Section ================
+#banner{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-image: url(/public/banner/b2.jpg);
+     width: 100%;
+     height: 40vh;
+     background-size: cover;
+     background-position: center;
+     h4{
+      color: white;
+      font-size: 1rem;
+     }
+     h2{
+      color: white;
+      font-size: 30px;
+      padding: 10px 0;
+      span{
+            color: red;
+      }
+     }
+     button:hover{
+      background: #088178;
+      color: #fff;
+     }
+}
+// ============== Small Banner Secttion ============
+#sm_banner{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .banner_box:hover button{
+           background-color: #088178;
+           border: 1px solid #088178; 
+      }
+      .banner_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            background-image: url(/public/banner/b17.jpg);
+            min-width: 580px;
+            height: 50vh;
+            height: 40vh;
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            h4{
+                  color: white;
+                  font-size: 20px;
+                  font-weight: 400;
+            }
+            h2{
+                  color: white;
+                  font-size: 28px;
+                  font-weight: 800;
+            }
+            span{
+                  color: white;
+                  font-size: 14px;
+                  font-weight: 500;
+                  padding-bottom: 15px;
+            }
+      }
+      .banner_box_2{
+            background-image: url(/public/banner/b10.jpg);
+      }
+}
+// ============== Secttion ================
+#banner3{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 80px;
+      .banner_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            background-image: url(/public/banner/b7.jpg);
+            min-width: 30%;
+            height: 30vh;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            margin-bottom: 20px;
+      }
+      h2{
+            color: white;
+            font-weight: 900;
+            font-size: 22px;
+      }
+      h3{
+            color: rgb(255, 255, 255);
+            font-weight: 900;
+            font-size: 16px;
+            background: #035c5652;
+      }
+      .banner_box_2{
+            background-image: url(/public/banner/b4.jpg);
+      }
+      .banner_box_3{
+            background-image: url(/public/banner/b18.jpg);
+      }
+}
