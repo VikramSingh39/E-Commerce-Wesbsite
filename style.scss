@@ -27,6 +27,10 @@ p{
       color: #465b52;
       margin: 15px 0 20px 0;
 }
+a{
+      text-decoration: none;
+      color: black;
+}
 .section-p1{
       padding: 40px 80px;
 }
@@ -74,8 +78,8 @@ body{
 
       #navbar{
             display: flex;
-            align-items: center;
-            justify-content: center;
+            // align-items: center;
+            // justify-content: center;
           
             li{
                   list-style: none;
@@ -107,6 +111,21 @@ body{
             }
 
 
+      }
+}
+#close{
+      display: none;
+}
+#mobile{
+      align-items: center; 
+       display: none;
+      a{
+            margin-right: 25px;
+            font-size: 1.2rem;
+            color: black;
+      }
+      i{
+            font-size: 24px;
       }
 }
 // ============== Home Page =============
@@ -365,4 +384,257 @@ body{
       .banner_box_3{
             background-image: url(/public/banner/b18.jpg);
       }
+}
+// ============== Newletter Secttion ================
+
+#news_letter{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+background-image: url(public/banner/b14.png);
+background-repeat: no-repeat;
+background-position: 20% 30%;
+background-color: #041e42;
+h4{
+      font-size: 22px;
+      font-weight: 800;
+      color: white;
+}
+p{
+   font-size: 14px;
+   font-weight: 600;
+   color: #818ea0;
+}
+span{
+      color: #ffbd27;
+   }
+   .form{
+      display: flex;
+      width: 40%;
+   }
+input{
+      height: 3.125rem;
+      padding: 0 1.25em;
+      font-size: 14px;
+      width: 100%;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      outline: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+
+}
+button{
+      background-color: #088178;
+      color: white;
+      white-space: nowrap;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+}
+}
+
+// ========= Footer Section ==============
+.footer_columns{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .logo{
+            margin-bottom: 30px;
+      }
+      .col{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+      }
+      h4{
+            font-size: 14px;
+            padding-bottom: 20px;
+      }
+      p{
+            font-size: 13px;
+            margin:  0 0 8px 0;
+      }
+      a{
+            font-size: 13px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 10px;
+      }
+      .follow{
+        color: #465b52;   
+        padding-right: 5px;
+        cursor: pointer; 
+      }
+      i:hover, a:hover{
+            color: #06938a;
+        }
+      
+      .row{
+         img{
+            border: 1px solid #088178;
+            border-radius: 6px;
+            margin: 10px 0 15px 0;
+            cursor: pointer;
+         }
+      }
+}
+.copyright{
+      width: 100%;
+      text-align: center;
+      a{
+            color: rgb(8, 125, 184);
+            text-decoration: none;
+      }
+}
+
+// =============== Media Query 799 PX ==============
+@media (max-width: 799px){
+.section-p1{
+      padding: 40px 40px;
+}
+      //  ============ Navbar section ============
+      #navbar{
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            height: 100vh;
+            width: 250px;
+            background-color: #e3e6f3;
+            box-shadow: 0 40px 60px rgba(0,0,0,0.05);
+            padding: 80px 0 10px;
+            transition: 0.3s;
+       li{
+            margin-bottom: 25px;
+       }
+      }
+      #mobile{
+            display: flex;
+            i{
+             
+            }
+       }
+       #navbar.active{
+                  right: 0;
+       }
+       #close{
+            display: flex;
+          position: absolute;
+          top: 30px;
+          left: 30px; 
+          font-size: 24px; 
+       }
+       #lg_bag{
+            display: none;
+       }
+
+      //  ========== Hero Section ==========
+      #hero{
+            height: 70vh;
+            padding: 0 80px;
+            background-position: top 30% right 30%;
+      }
+      #feature{
+            justify-content: center;
+            .fe_box{
+                  margin:  15px;
+            }
+      }
+// =========== Product ========
+#product1{
+      .pro_container{
+            justify-content: center;
+      }
+      .pro{
+            margin-inline: 15px;
+      }
+}
+
+
+// ========= banner =====
+#banner{
+      height: 28vh;
+}
+// =========== banner box =======
+#sm_banner{
+      .banner_box{
+     min-width: 100%;
+     height: 30vh;
+      }
+
+  }
+  #banner3{
+      padding: 0 40px;
+      .banner_box{
+            width: 28%;
+      }
+  }
+// ========== Newletter Form
+.form{
+      min-width: 70%;
+}
+}
+
+// ========= Media Query 477 Px ============
+@media (max-width: 477px){
+.section-p1{
+      padding: 20px;
+}
+#header{
+    padding: 10px 20px;
+}
+h2{
+      font-size: 32px;
+}
+h1{
+      font-size: 38px;
+}
+#hero{
+    padding: 0 20px;
+    background-position: 55%;  
+}
+#feature{
+      justify-content: space-between;
+      .fe_box{
+            width: 155px;
+            margin: 0 0 15px 0;
+      }
+}
+#product1{
+      .pro{
+            width: 100%;
+      }
+}
+#banner{
+      height: 40vh;
+}
+#sm_banner {
+      .banner_box{
+         height: 45vh;   
+      }
+      .banner_box_2{
+            margin-top: 20px;
+      }
+}
+#banner3{
+      padding: 0 20px;
+      .banner_box{
+            width: 100%;
+      }
+  }
+  #news_letter{
+      padding: 40px 20px;
+      .form{
+            width: 100%;
+      } 
+} 
+footer{
+      .copyright{
+            text-align: start;
+      }
+}
+
 }
