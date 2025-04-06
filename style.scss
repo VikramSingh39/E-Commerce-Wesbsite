@@ -653,7 +653,200 @@ background-image: url(/public/banner/b19.jpg);
       }
 
 }
+// =============== Contact-details ================
+#contact-details{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    .details{
+         width: 40%;
+         span{
+            font-size: 14px;
+         }
+         h2{
+           font-size: 26px;
+           line-height: 35px;
+           padding: 20px 0; 
+         }
+         h3{
+            font-size: 1rem;
+            padding-bottom: 15px;
+         }
+         li{
+            list-style: none;
+            display: flex;
+            padding: 10px 0;
+            i{
+                  font-size: 14px;
+                  padding-right: 22px;
+            }
+            p{
+                  margin: 0;
+                  font-size: 14px;
+            }
+         }
+    }
+    .map{
+      width: 55%;
+      height: 400px;
+      iframe{
+            width: 100%;
+            height: 100%;
+      }
+    }
+}
+// ================= form-details ================
+#form-details{
+      display: flex;
+      justify-content: space-between;
+      margin: 30px;
+      padding: 80px;
+      border: 1px solid #c9cbce;
+      form{
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            span{
+                  font-size: 14px;
+            }
+            h2{
+                  font-size: 26px;
+                  line-height: 35px;
+                  padding: 20px 0;   
+            }
+            input,textarea{
+                  width: 100%;
+                  padding: 12px 15px;
+                  outline: none;
+                  margin-bottom: 20px;
+                  border: solid 1px #c9cbce;
+            }
+            button{
+                  background-color: #088178;
+                  color: white;
+            }
+      }
+      .people div{
+            padding-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+            img{
+                width: 65px;
+                height: 65px;
+                object-fit: cover;
+                margin-right: 15px;  
+            }
+            p{
+                  margin: 0;
+                  font-size: 13px;
+                  line-height: 25px;
+                  span{
+                        display: block;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: black;
+                  }
+            }
+      }
 
+}
+//  ========= Cart Section ===============
+#cart{
+      overflow-x: auto;
+}
+#cart{
+
+      tr{
+            td{
+              padding-top: 15px;
+              font-size: 14px;   
+              white-space: wrap; 
+            }
+            i, img{
+                  cursor: pointer; 
+          }
+
+      }
+      table{
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            white-space: nowrap;
+            img{
+                  width: 70px;
+            }
+            td:nth-child(1),td:nth-child(2),td:nth-child(3),td:nth-child(4),td:nth-child(5),td:nth-child(6){
+                  width: 100px;
+                  text-align: center;
+            }
+            input{
+               width: 70px;
+               padding: 10px 5px 10px 15px;
+            }
+            thead{
+                  border: 1px solid #c9cbce;
+                  border-left: none;
+                  border-right:  none;
+                  td{
+                     font-weight: 700;
+                     text-transform: uppercase;
+                     font-size: 14px;
+                     padding: 18px 0;  
+                  }
+            }
+      }
+}
+// ========= Cart Total Section ==============
+#cart-add{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      #coupon{
+       width: 50%;
+       margin-bottom: 30px;
+       h3{
+            padding-bottom: 15px;
+       }
+       input{
+            padding: 10px 20px;
+            outline: none;
+            width: 60%;
+            border: 1px solid #c9cbce;
+       }
+       button{
+            background-color: #088178;
+            color: white;
+            padding: 12px 20px;
+       }
+      }
+
+      #subtotal{
+            width: 50%;
+            margin-bottom: 30px;
+            border: 1px solid #c9cbce;
+            padding: 30px;
+            h3{
+                  padding-bottom: 15px;
+             }
+            table{
+                  border-collapse: collapse;
+                  width: 100%;
+                  margin-bottom: 20px;
+                  td{
+                        width: 50%;
+                        border: 1px solid #c9cbce;
+                        padding: 10px;
+                        font-size: 14px;
+                  }
+            }
+            button{
+                  background-color: #088178;
+                  color: white;
+                  padding: 12px 20px;
+             }
+      }
+}
 // =============== Media Query 799 PX ==============
 @media (max-width: 799px){
 .section-p1{
@@ -740,10 +933,17 @@ background-image: url(/public/banner/b19.jpg);
 .form{
       min-width: 70%;
 }
+//  ========== Contact Page ========
+ #form-details{
+     padding: 40px;
+     form{
+      width: 50%;
+     } 
+ }
 }
 
 // ========= Media Query 477 Px ============
-@media (max-width: 477px){
+@media (max-width: 500px){
 .section-p1{
       padding: 20px;
 }
@@ -846,5 +1046,37 @@ footer{
             width: 100%;
       }
 }
-
+// ========= Contact Page ========
+#contact-details{
+      flex-direction: column;
+    .details{
+      width: 100%;
+    }
+    .map{
+      width: 100%;
+    }
+}
+form{
+      button{
+            margin-bottom: 30px;
+      }
+}
+#form-details{
+    margin: 10px;
+    padding: 20px 10px;
+    flex-wrap: wrap;  
+    form{
+      width: 100%;
+    }
+}
+// ======= Cart Page ==========
+#cart-add{
+    flex-direction: column;  
+    #coupon{
+      width: 100%;
+    }
+    #subtotal{
+      width: 100%;
+    }
+}
 }
